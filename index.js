@@ -11,7 +11,6 @@ app = express();
 //connect to mongodb
 mongoose.connect('mongodb+srv://hamzakhanonlinebusiness:VhC9jPsn2q5YKLPF@cluster0.vyrtwya.mongodb.net/?retryWrites=true&w=majority');
 
-
 //usages
 app.use(express.json());
 app.use(cors({methods: ["POST", "GET", "PUT", "DELETE"], origin: ['http://localhost:4200']}));
