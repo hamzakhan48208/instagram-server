@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://hamzakhanonlinebusiness:VhC9jPsn2q5YKLPF@cluster
 
 //usages
 app.use(express.json());
-app.use(cors({methods: ["POST", "GET", "PUT", "DELETE"], origin: ['http://localhost:4200']}));
+app.use(cors({methods: ["POST", "GET", "PUT", "DELETE"], origin: ['http://localhost:4200', 'https://instagram-frontend-sigma.vercel.app']}));
 
 app.use(function(req, res, next){
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
